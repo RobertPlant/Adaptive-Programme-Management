@@ -1,0 +1,34 @@
+/* 
+    Document   : default
+    Created on : 28-Sep-2012, 20:32:01
+    Author     : rogpc
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+root { 
+    display: block;
+}
+
+h1
+{
+    font: 35px "sergio ui", sans-serif ;
+}
+
+body
+{
+    background-color: black;
+    font: 16px "sergio ui", sans-serif;
+    color: White;
+    margin: 0 auto;
+    padding: 15px
+    
+}
+a
+{
+    color: White;
+}
+a:hover 
+{
+    color: White;
+}      
