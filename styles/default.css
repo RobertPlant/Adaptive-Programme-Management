@@ -17,7 +17,7 @@ h1
 
 body
 {
-    background-color: black;
+    background-color: grey;
     font: 16px "sergio ui", sans-serif;
     color: White;
     margin: 0 auto;
@@ -32,3 +32,37 @@ a:hover
 {
     color: White;
 }      
+
+
+* {
+margin: 0;
+padding: 0;
+}
+
+ul {
+list-style-type: none;
+width: 663px;
+margin: auto;
+}
+
+li {
+float: left;
+}
+
+ul a {
+background-image:  url(../include/navi_bg_divider.png);
+background-repeat: no-repeat;
+background-position: right;
+padding-right: 32px;
+padding-left: 32px;
+display: block;
+line-height: 80px;
+text-decoration: none;
+font-family: "sergio ui";
+font-size: 21px;
+color: White;
+}
+
+ul a:hover {
+color: #FFF;
+}

@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html>
     <head>
         <link rel="stylesheet" type="text/css" href="styles/default.css" />
@@ -8,6 +8,13 @@
         
     </head>
     <body>
+        <?php
+        include 'include/header.php';
+        ?>
+        
+    
+        
+        
        <div align="middle">
         <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
         <h1>Adaptive Programme Management</h1><br/>
