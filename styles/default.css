@@ -13,6 +13,7 @@ root {
 h1
 {
     font: 35px "sergio ui", sans-serif ;
+    font-weight: 800;
 }
 
 body
@@ -57,7 +58,7 @@ li {
 }
 
 ul a {
-    background-image:  url(../include/navi_bg_divider.png);
+    background-image:  url("../include/navi_bg_divider.png");
     background-repeat: no-repeat;
     background-position: right;
     padding-right: 32px;
@@ -82,10 +83,14 @@ fullwidth {
 
 .headertext {
     text-align: right;
-    width: 200px;
+    width: 350px;
 }
 
 .headernav {
    width: 700px; 
    float: right;
+}
+
+table {
+    padding: 2px;
 }

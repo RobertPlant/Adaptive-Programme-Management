@@ -22,7 +22,6 @@
                             <ul>
                                 <li><a href="login/login.php">LOGIN</a></li> 
                                 <li><a href="http://nsxweisse.com/about/">ABOUT</a></li>
-                                
                             </ul>
                         </div>
                     </td>
