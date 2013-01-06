@@ -2,43 +2,34 @@
 <html>
     <head>
         <link rel="stylesheet" type="text/css" href="styles/default.css" />
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></meta>
         <title></title>
         
         
     </head>
     <body>
+        <div id="container">
         <?php
         include 'include/header.php';
-        ?>
-        
-    
-        
-        
-       <div align="middle">
-        <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
-        <h1>Adaptive Programme Management</h1><br/>
-        <?php
-            IF (array_key_exists('l', $_REQUEST))
+        IF (array_key_exists('l', $_REQUEST))
+        {
+            if ($_REQUEST['l'] == "n")
             {
-                if ($_REQUEST['l'] == "n")
-                {
-                    echo "Please try your details again";
-                }
-                elseif ($_REQUEST['l'] == "y")
-                {
-                    echo "Thank you for logging in";
-                }
-                elseif ($_REQUEST['l'] == "u")
-                {
-                    echo "Username not found";
-                }
-                elseif ($_REQUEST['l'] == "c")
-                {
-                    echo "Account Created";
-                }
+                echo "Please try your details again";
             }
-
+            elseif ($_REQUEST['l'] == "y")
+            {
+                echo "Thank you for logging in";
+            }
+            elseif ($_REQUEST['l'] == "u")
+            {
+                echo "Username not found";
+            }
+            elseif ($_REQUEST['l'] == "c")
+            {
+                echo "Account Created";
+            }
+        }
         ?>
         
         <form name="input" action="login/login.php" method="post">
@@ -65,6 +56,7 @@
             
             <a href="project_selector/index.php">Index</a>
         </form>
-       </div
+       </div>
+        </div>
     </body>
 </html>
