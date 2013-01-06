@@ -34,40 +34,60 @@ a:hover
 }      
 
 #container {
-width: 900px;
-margin: 0 auto;
-text-align: left
+    width: 900px;
+    margin: 0 auto;
+    text-align: left
 }
 
 * {
-margin: 0;
-padding: 0;
+    margin: 0;
+    padding: 0;
 }
 
 ul {
-list-style-type: none;
-width: 663px;
-margin: auto;
+    list-style-type: none;
+    width: 300px;
+    margin: auto;
 }
 
 li {
-float: left;
+    float: left;
 }
 
 ul a {
-background-image:  url(../include/navi_bg_divider.png);
-background-repeat: no-repeat;
-background-position: right;
-padding-right: 32px;
-padding-left: 32px;
-display: block;
-line-height: 80px;
-text-decoration: none;
-font-family: "sergio ui";
-font-size: 21px;
-color: White;
+    background-image:  url(../include/navi_bg_divider.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    padding-right: 32px;
+    padding-left: 32px;
+    display: block;
+    line-height: 80px;
+    text-decoration: none;
+    font-family: "sergio ui";
+    font-size: 21px;
+    color: White;
 }
 
 ul a:hover {
-color: #FFF;
+    color: #FFF;
+}
+
+fullwidth {
+    width: 900px;
+    height: 200px;
+    text-align: right;
+}
+
+.headertext {
+    text-align: right;
+    width: 200px;
+}
+
+.headernav {
+   width: 900px; 
+  
+}
+
+bodyfill {
+    
 }
