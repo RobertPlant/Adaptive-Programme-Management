@@ -49,7 +49,7 @@ a:hover
 
 ul {
     list-style-type: none;
-    width: 500px;
+    width: 600px;
     margin: auto;
 }
 
@@ -83,11 +83,11 @@ ul a:hover {
 
 .headertext {
     text-align: right;
-    width: 300px;
+    width: 250px;
 }
 
 .headernav {
-   width: 600px; 
+   width: 700px; 
    float: right;
 }
 
@@ -110,12 +110,6 @@ table {
     padding: 2px;
 }
 
-#slidercontainer {
-    width: 900px;
-    margin: 0 auto;
-    text-align: left;
-}
-
 .boxtitle {
     text-align: left;
     color: White;
@@ -123,4 +117,16 @@ table {
     font-size: 25px;
     padding-bottom: 10px;
     padding-left: 10px;
+}
+
+#error {
+    text-align: center;
+    color: Red;
+    font-weight: 800;
+    font-size: 25px;
+    padding-top: 20px;
+    margin-bottom: 20px;
+    background: White;
+    width: 900px;
+    height: 50px;
 }

@@ -3,6 +3,7 @@
     if (!$con)
     {
         die('Could not connect: ' . mysql_error());
+        exit;
     }
     mysql_select_db("Ada_Prog_Man", $con);
     
@@ -20,20 +21,21 @@
         {
                 session_start(); 
                 $_SESSION['Login']="Yes";
+
                 ob_end_clean(); 
-                header("Location: ../project_selector/index.php"); 
+                header("Location: http://localhost/testing/index.php?l=y"); 
                 exit; 
         }
         else 
         {
                 ob_end_clean();
-                header("Location: ../index.php?l=n"); 
+                header("Location:  http://localhost/testing/index.php?l=n"); 
                 exit; 
         }
     }
    
     mysql_close($con);
     ob_end_clean(); 
-    header("Location: ../index.php?l=u"); 
+    header("Location:  http://localhost/testing/index.php?l=u"); 
     exit; 
 ?>
