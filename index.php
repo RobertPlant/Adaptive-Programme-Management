@@ -8,9 +8,12 @@
         
     </head>
     <body>
+        <?php
+            include 'include/header.php';
+        ?>
         <div id="container">
             <?php
-                include 'include/header.php';
+                
                 IF (array_key_exists('l', $_REQUEST))
                 {
                     if ($_REQUEST['l'] == "n")
