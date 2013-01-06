@@ -18,7 +18,7 @@ h1
 
 body
 {
-    background-color: grey;
+    background-color: Grey;
     font: 16px "sergio ui", sans-serif;
     color: White;
     margin: 0 auto;
@@ -49,7 +49,7 @@ a:hover
 
 ul {
     list-style-type: none;
-    width: 300px;
+    width: 500px;
     margin: auto;
 }
 
@@ -75,7 +75,7 @@ ul a:hover {
     color: #FFF;
 }
 
-fullwidth {
+#fullwidth {
     width: 900px;
     height: 200px;
     text-align: right;
@@ -83,14 +83,44 @@ fullwidth {
 
 .headertext {
     text-align: right;
-    width: 350px;
+    width: 300px;
 }
 
 .headernav {
-   width: 700px; 
+   width: 600px; 
    float: right;
+}
+
+#updates {
+    width: 300px;
+    min-height: 200px;
+    background-color: White;
+    margin-right: 50px;
+    color: black;
+}
+
+#aboutus {
+    width: 550px;
+    min-height: 200px;
+    background-color: White;
+    color: black;
 }
 
 table {
     padding: 2px;
+}
+
+#slidercontainer {
+    width: 900px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.boxtitle {
+    text-align: left;
+    color: White;
+    font-weight: 800;
+    font-size: 25px;
+    padding-bottom: 10px;
+    padding-left: 10px;
 }
