@@ -21,7 +21,8 @@
                     <div class="headernav">
                         <ul>
                             <li><a href="#login-box" class="login-window">LOGIN</a></li> 
-                            <li><a href="../login/new_user.php">NEW USER</a></li>
+                            <li><a href="#newuser-box" class="newuser-window">NEW USER</a></li> 
+<!--                            <li><a href="login/new_user.php">NEW USER</a></li>-->
                             <li><a href="">ABOUT</a></li>
                         </ul>
                     </div>

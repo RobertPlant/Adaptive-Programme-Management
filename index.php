@@ -50,11 +50,74 @@
                 });
         });
     </script>
+     <script type="text/javascript">
+        $(document).ready(function() {
+                $('a.newuser-window').click(function() {
+
+                        // Getting the variable's value from a link 
+                        var loginBox = $(this).attr('href');
+
+                        //Fade in the Popup and add close button
+                        $(loginBox).fadeIn(300);
+
+                        //Set the center alignment padding + border
+                        var popMargTop = ($(loginBox).height() + 24) / 2; 
+                        var popMargLeft = ($(loginBox).width() + 24) / 2; 
+
+                        $(loginBox).css({ 
+                                'margin-top' : -popMargTop,
+                                'margin-left' : -popMargLeft
+                        });
+
+                        // Add the mask to body
+                        $('body').append('<div id="mask"></div>');
+                        $('#mask').fadeIn(300);
+
+                        return false;
+                });
+
+                // When clicking on the button close or the mask layer the popup closed
+                $('a.close, #mask').live('click', function() { 
+                $('#mask , .newuser-popup').fadeOut(300 , function() {
+                        $('#mask').remove();  
+                }); 
+                return false;
+                });
+        });
+    </script>
     <title>Adaptive Programme Management</title>  
 </head>
 <body>
     <?php
         include 'include/header.php';
+
+        IF (array_key_exists('u', $_REQUEST))
+        {
+            if ($_REQUEST['u'] == "u")
+            {
+                echo "Someone already has this account name, please try another";
+            }
+        }
+
+        IF (array_key_exists('l', $_REQUEST))
+        {
+            if ($_REQUEST['l'] == "n")
+            {
+                echo "Please try your details again";
+            }
+            elseif ($_REQUEST['l'] == "y")
+            {
+                echo "Thank you for logging in";
+            }
+            elseif ($_REQUEST['l'] == "u")
+            {
+                echo "Username not found";
+            }
+            elseif ($_REQUEST['l'] == "c")
+            {
+                echo "Account Created";
+            }
+        }
     ?>
     <div id="slidercontainer">
         <div class="slider-wrapper theme-default">
@@ -85,48 +148,55 @@
         </tr>
     </table>
     
-        <?php
-            IF (array_key_exists('l', $_REQUEST))
-            {
-                if ($_REQUEST['l'] == "n")
-                {
-                    echo "Please try your details again";
-                }
-                elseif ($_REQUEST['l'] == "y")
-                {
-                    echo "Thank you for logging in";
-                }
-                elseif ($_REQUEST['l'] == "u")
-                {
-                    echo "Username not found";
-                }
-                elseif ($_REQUEST['l'] == "c")
-                {
-                    echo "Account Created";
-                }
-            }
-        ?>
+ 
 
-<div id="login-box" class="login-popup" style="display: none; margin-top: -116px; margin-left: -132px;">
-        <a href="#" class="close"><img src="images/close_pop.png" class="btn_close" title="Close Window" alt="Close"></a>
-          <form method="post" class="signin" action="login/login.php">
-                <fieldset class="textbox">
-            	<label class="username">
-                <span>Username or email</span>
-                <input id="username" name="User_ID" value="" type="text" autocomplete="on" placeholder="Username">
-                </label>
-                
-                <label class="password">
-                <span>Password</span>
-                <input id="password" name="Password" value="" type="password" placeholder="Password">
-                </label>
-                
-                <button class="submit button" type="submit">Sign in</button>              
-<!--                <p>
-                <a class="forgot" href="#">Forgot your password?</a>
-                </p>-->
-                
-                </fieldset>
-          </form>
-		</div>
+        <div id="login-box" class="login-popup" style="display: none; margin-top: -116px; margin-left: -132px;">
+            <div align="right"><a href="#" class="close"><img src="images/close_pop.png" class="btn_close" title="Close Window" alt="Close"></a></div>
+            <h1> Login </h1>
+            <form method="post" class="signin" action="login/login.php">
+                    <fieldset class="textbox">
+                    <label class="username">
+                        <span>Username</span>
+                        <input  name="User_ID" value="" type="text" autocomplete="on" placeholder="Username">
+                    </label>
+
+                    <label class="password">
+                        <span>Password</span>
+                        <input  name="Password" value="" type="password" placeholder="Password">
+                    </label>
+
+                    <button class="submit button" type="submit">Sign in</button>              
+    <!--                <p>
+                    <a class="forgot" href="#">Forgot your password?</a>
+                    </p>-->
+
+                    </fieldset>
+            </form>
+        </div>
+        
+
+    
+        <div id="newuser-box" class="newuser-popup" style="display: none; margin-top: -116px; margin-left: -132px;">
+            <div align="right"><a href="#" class="close"><img src="images/close_pop.png" class="btn_close" title="Close Window" alt="Close"></a></div>
+            <h1> New User </h1>
+            <form method="post" class="signin" action="login/add_user.php">
+                    <fieldset class="textbox">
+                    <label class="username">
+                        <span>Username</span>
+                        <input  name="User_ID" value="" type="text" autocomplete="on" placeholder="Username">
+                    </label>
+
+                    <label class="password">
+                        <span>Password</span>
+                        <input name="Password" value="" type="password" placeholder="Password">
+                    </label>
+
+                    <button class="submit button" type="submit">Sign in</button>              
+    <!--                <p>
+                    <a class="forgot" href="#">Forgot your password?</a>
+                    </p>-->
+
+                    </fieldset>
+            </form>
+        </div>
 </body>

@@ -37,6 +37,24 @@
         -webkit-border-radius: 3px; /* Safari, Chrome */
 }
 
+.newuser-popup{
+	display:none;
+	background: #333;
+	padding: 10px; 	
+	border: 2px solid #ddd;
+	float: left;
+	font-size: 1.2em;
+	position: fixed;
+	top: 50%; left: 50%;
+	z-index: 99999;
+	box-shadow: 0px 0px 20px #999; /* CSS3 */
+        -moz-box-shadow: 0px 0px 20px #999; /* Firefox */
+        -webkit-box-shadow: 0px 0px 20px #999; /* Safari, Chrome */
+	border-radius:3px 3px 3px 3px;
+        -moz-border-radius: 3px; /* Firefox */
+        -webkit-border-radius: 3px; /* Safari, Chrome */
+}
+
 img.btn_close { Position the close button
 	float: right; 
 	margin: -28px -28px 0 0;
@@ -98,3 +116,4 @@ form.signin input::-webkit-input-placeholder { color:#bbb; text-shadow:0 0 2px #
 	width:214px;
 }
 .button:hover { background:#ddd; }
+

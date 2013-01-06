@@ -14,7 +14,7 @@
     {
         mysql_close($con);
         ob_end_clean(); 
-        header("Location: new_user.php?u=u"); 
+        header("Location: ../index.php?u=u"); 
         exit;     
     }
     else
