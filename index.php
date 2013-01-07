@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <head>
-    <link rel="stylesheet" type="text/css" href="styles/default.css" />
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
-    <script src="js/jquery.nivo.slider.pack.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="styles/default.css"  type="text/css"/>
     <link rel="stylesheet" href="styles/slider/nivo-slider.css" type="text/css" media="screen" />
     <link rel="stylesheet" href="styles/slider/default.css" type="text/css" media="screen" />
     <link rel="stylesheet" href="styles/login/login.css" type="text/css" media="screen" />
+    <script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
+    <script src="js/jquery.nivo.slider.pack.js" type="text/javascript"></script>
     <script type="text/javascript">
         $(window).load(function() {
             $('#slider').nivoSlider({
@@ -19,11 +19,9 @@
     <title>Adaptive Programme Management</title>  
 </head>
 <body>
-    
     <?php
         include 'include/generic/header.php';
     ?>
-   
     <div id="slidercontainer">
         <div class="slider-wrapper theme-default">
             <div id="slider" class="nivoSlider">

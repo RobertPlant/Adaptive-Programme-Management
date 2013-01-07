@@ -1,3 +1,11 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Logging in...</title>
+    </head>
+    <body>
+        
+    </body>
 <?php
     $con = mysql_connect("localhost","root","");
     if (!$con)
@@ -39,3 +47,4 @@
     header("Location:  http://localhost/testing/index.php?l=u"); 
     exit; 
 ?>
+</html>

@@ -4,11 +4,12 @@
     <title>Adaptive Programme Management</title>
     <meta name="description" content="Adaptive Programme Management">
     <meta name="author" content="Robert Plant">
+    <link rel="stylesheet" href="../styles/default.css"  type="text/css"/>
     <link rel="icon" href="include/favicon.ico">
     <script type='text/javascript' src='../js/jquery.js'></script>  
 </head>
 <body>
-
+    <div id="dot"> </div>
     <div id="fullwidth" >
         <table>
             <tr>
