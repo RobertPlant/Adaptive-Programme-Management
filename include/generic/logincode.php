@@ -135,9 +135,6 @@
                     </label>
 
                     <button class="submit button" type="submit">Sign In!</button>              
-    <!--                <p>
-                    <a class="forgot" href="#">Forgot your password?</a>
-                    </p>-->
 
                     </fieldset>
             </form>
@@ -161,9 +158,6 @@
                     </label>
 
                     <button class="submit button" type="submit">Sign Up!</button>              
-    <!--                <p>
-                    <a class="forgot" href="#">Forgot your password?</a>
-                    </p>-->
 
                     </fieldset>
             </form>

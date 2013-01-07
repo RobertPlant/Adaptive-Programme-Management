@@ -28,10 +28,9 @@
                 }        
             } 
             catch (Exception $e) {
-                echo 'Caught exception: ',  $e->getMessage(), "\n";
+                //echo 'Caught exception: ',  $e->getMessage(), "\n";
                 echo "<div id='error'>You need to Login</div>";
             }  
-            
         ?>
        </div>
     </body>
