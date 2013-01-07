@@ -14,34 +14,28 @@
         exit;
     }
     mysql_select_db("Ada_Prog_Man", $con);
-    
     $sql = "SELECT * FROM users WHERE User_ID='" . $_POST["User_ID"] . "'";    
-
     $result = mysql_query($sql);
     $row = mysql_fetch_array($result);
-    
     CRYPT_BLOWFISH;
     $encrypted = crypt($_REQUEST['Password'], $row['salt']);
-
     IF ($encrypted)
     {     
         IF ($encrypted == $row['Password'])
         {
-                session_start(); 
-                $_SESSION['Login']="Yes";
-
-                ob_end_clean(); 
-                header("Location: http://localhost/testing/index.php?l=y"); 
-                exit; 
+            session_start(); 
+            $_SESSION['Login']="Yes";
+            ob_end_clean(); 
+            header("Location: http://localhost/testing/index.php?l=y"); 
+            exit; 
         }
         else 
-        {
-                ob_end_clean();
-                header("Location:  http://localhost/testing/index.php?l=n"); 
-                exit; 
+        {       
+            ob_end_clean();
+            header("Location:  http://localhost/testing/index.php?l=n"); 
+            exit; 
         }
     }
-   
     mysql_close($con);
     ob_end_clean(); 
     header("Location:  http://localhost/testing/index.php?l=u"); 

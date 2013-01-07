@@ -11,32 +11,27 @@
     <link rel="stylesheet" href="../styles/login/login.css" type="text/css" media="screen" />
         <title></title> 
     </head>
-    <body>
-             
+    <body>      
        <div align="middle">
         <?php   
-        
-        include '../include/generic/header.php';
-        
-        If ($_SESSION['Login']=="Yes")
-        {           
-            echo '<br/><br/><br/><br/><br/><br/><br/><br/><br/><h1>Project Selection</h1><br/>';
+            include '../include/generic/header.php';
+            try {
+                IF ($_SESSION['Login']=="Yes")
+                {           
+                    echo '<h1>Project Selection</h1><br/>';
+                    $mysqli = new mysqli("localhost", "root", "", "Ada_Prog_Man");
+                    $res = $mysqli->query("SELECT * FROM project");
+                    $res->data_seek(0);
+                    while ($row = $res->fetch_assoc()) {
+                        echo "<a href='proj.php?Proj=" . $row['Project_ID'] . "'>" . $row['Title'] . "</a><br>";
+                    }
+                }        
+            } 
+            catch (Exception $e) {
+                echo 'Caught exception: ',  $e->getMessage(), "\n";
+                echo "<div id='error'>You need to Login</div>";
+            }  
             
-            $mysqli = new mysqli("localhost", "root", "", "Ada_Prog_Man");
-            
-            $res = $mysqli->query("SELECT * FROM project");
-
-            $res->data_seek(0);
-            while ($row = $res->fetch_assoc()) {
-                echo "<a href='proj.php?Proj=" . $row['Project_ID'] . "'>" . $row['Title'] . "</a><br>";
-            }
-        }
-        else
-        {
-            echo "You need to <a href='#login-box' class='login-window'>LOGIN</a><br>";
-        }
-
-
         ?>
        </div>
     </body>
