@@ -12,7 +12,6 @@
         <title></title> 
     </head>
     <body>      
-       <div align="middle">
         <?php   
             include '../include/generic/header.php';
             try {
@@ -32,6 +31,5 @@
                 echo "<div id='error'>You need to Login</div>";
             }  
         ?>
-       </div>
     </body>
 </html>
