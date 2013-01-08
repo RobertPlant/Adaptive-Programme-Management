@@ -26,19 +26,19 @@
             session_start(); 
             $_SESSION['Login']="Yes";
             ob_end_clean(); 
-            header("Location: http://localhost/testing/index.php?l=y"); 
+            header("Location: http://trebotplant.dlinkddns.com//testing/index.php?l=y"); 
             exit; 
         }
         else 
         {       
             ob_end_clean();
-            header("Location:  http://localhost/testing/index.php?l=n"); 
+            header("Location:  http://trebotplant.dlinkddns.com//testing/index.php?l=n"); 
             exit; 
         }
     }
     mysql_close($con);
     ob_end_clean(); 
-    header("Location:  http://localhost/testing/index.php?l=u"); 
+    header("Location:  http://trebotplant.dlinkddns.com//testing/index.php?l=u"); 
     exit; 
 ?>
 </html>
