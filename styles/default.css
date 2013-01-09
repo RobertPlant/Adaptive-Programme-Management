@@ -27,9 +27,9 @@ h1
 }
 
 body {
-    background-color: #202020;
+    background-color: #e4eaef;
     font: 16px "sergio ui", sans-serif;
-    color: White;
+    color: Black;
     margin: 0 auto;
     padding: 15px;
     text-align: center;
@@ -72,7 +72,7 @@ li {
 }
 
 ul a {
-    background-image:  url("../include/navi_bg_divider.png");
+    background-image:  url("../include/dotty-top.png");
     background-repeat: no-repeat;
     background-position: right;
     padding-right: 32px;
@@ -82,7 +82,7 @@ ul a {
     text-decoration: none;
     font-family: "sergio ui";
     font-size: 21px;
-    color: White;
+    color: Black;
 }
 
 ul a:hover {
@@ -120,7 +120,7 @@ ul a:hover {
     min-height: 200px;
     background-color: White;
     color: black;
-        border: 1px dotted;
+    border: 1px dotted;
     border-radius:7px;
 }
 
@@ -130,7 +130,7 @@ table {
 
 .boxtitle {
     text-align: left;
-    color: White;
+    color: Black;
     font-weight: 800;
     font-size: 25px;
     padding-bottom: 10px;
