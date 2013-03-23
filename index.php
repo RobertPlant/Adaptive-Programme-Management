@@ -38,13 +38,17 @@
             <td>
                 <div class="boxtitle">UPDATES</div>
                 <div id="updates">
-                    Hello2
+                    <b>Changes that have been made to the system consist of;</b>
+                    <p>Ability to add adtiional milestones has been added</p>
+                    <p>Ability to change current milestones has been added</p>
                 </div>
             </td>
             <td>
                 <div class="boxtitle">ABOUT US</div>
                 <div id="aboutus">
-                    Hey!
+                    <p>Adaptive Programme Management has been designed to be a suitable replacement for
+                    users when dealing with projects, this system enables the user to create a project and to
+                    manage it to completion</p>
                 </div>
             </td>
         </tr>

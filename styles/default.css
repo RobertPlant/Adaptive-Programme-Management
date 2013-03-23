@@ -26,6 +26,11 @@ h1
     z-index:-1;
 }
 
+p {
+    text-align: left;
+    padding: 5px 5px 5px 5px;
+}
+
 body {
     background-color: #e4eaef;
     font: 16px "sergio ui", sans-serif;
@@ -107,7 +112,7 @@ ul a:hover {
 
 #updates {
     width: 300px;
-    min-height: 100%;
+    min-height: 200px;
     background-color: White;
     margin-right: 50px;
     color: black;
