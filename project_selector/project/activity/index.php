@@ -12,12 +12,13 @@
 <body>
 
 <?php
-include '../../../include/generic/header.php';
-include 'edit_milestone/user_form.php';
 $mysqli = new mysqli("localhost", "eggsdb", "eggsdb", "ada_prog_man");
 $res = $mysqli->query("SELECT * FROM activity  WHERE activity_ID=" . $_GET['Acti']);
 $res->data_seek(0);
 $row = $res->fetch_assoc();
+include '../../../include/generic/header.php';
+include 'edit_milestone/user_form.php';
+include 'delete_milestone/user_form.php';
 ?>
 <table>
     <tr>

@@ -9,7 +9,7 @@ else
     $start = date_decode($_REQUEST['start']);
     $end = date_decode_end($_REQUEST['end']);
     mysql_select_db("ada_prog_man", $con);
-    mysql_query($sql ="UPDATE activity
+    mysql_query("UPDATE activity
                     SET
                         activity='".$_REQUEST['activity'].
                         "', criticals='".$_REQUEST['criticals'].
@@ -18,7 +18,6 @@ else
                         low='".$start."', y='".$end."',
                         phase='".$_REQUEST['phase']."'
                     WHERE activity_ID='".$_REQUEST['Activity_ID']."';");
-    echo $sql;
     mysql_close($con);
     ob_end_clean();
     header("Location: ../index.php?Acti=" . $_REQUEST['Activity_ID']);
