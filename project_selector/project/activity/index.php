@@ -22,7 +22,6 @@ $row = $res->fetch_assoc();
 <table>
     <tr>
         <td>
-
             <div id="proj-nav">
                 <a href="#editActiv-box" class="login-window">
                     <img src="../../../images/edit-milestone.png"/><br/>Edit<br/>Milestone
