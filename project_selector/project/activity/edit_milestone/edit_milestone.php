@@ -6,10 +6,8 @@ if (!$con)
 }
 else
 {
-    //date formatting
     $start = date_convert($_REQUEST['low']);
     $end = date_convert_end($_REQUEST['y']);
-
     mysql_select_db("ada_prog_man", $con);
     mysql_query("UPDATE activity SET
                     activity='".$_REQUEST['activity']."', criticals='".$_REQUEST['criticals']."',

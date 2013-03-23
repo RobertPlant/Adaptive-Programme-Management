@@ -27,7 +27,6 @@
                         <label class="username">
                             <span>Current Status: </span>
                             <input size="25" type="text" name="phase"> </label>
-
                     </td>
                 </tr>
             </table>

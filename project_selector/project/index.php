@@ -47,10 +47,10 @@ $row = $res->fetch_assoc();
 
             <div id="container" style="height:450px">
                 <?php
-                echo "<div class='boxtitle'>" . $row['Title'] . "</div>";
+                echo "<div class='boxTitle'>" . $row['Title'] . "</div>";
                 echo $row['Description'];
                 ?>
-                <div id="container2"
+                <div id="chartContainer"
                      style="height: 350px; width: 800px; margin: 0 auto">
                 </div>
                 <?php

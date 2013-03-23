@@ -36,7 +36,7 @@ Header("content-type: application/x-javascript");
 var chart = new Highcharts.Chart({
 
     chart: {
-        renderTo: 'container2',
+        renderTo: 'chartContainer',
         type: 'bar',
         zoomType: 'x'
     },       
