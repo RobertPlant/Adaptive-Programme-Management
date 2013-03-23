@@ -14,7 +14,6 @@ function decode_date($a)
     return $f;
 }
 ?>
-<!--/todo Work on the date stuff-->
 <div id="editActiv-box" class="login-popup" style="display: none; margin-top: -116px; margin-left: -132px;">
     <div align="right"><a href="#" class="close"><img src="http://176.31.108.26/rob/images/close_pop.png" class="btn_close" title="Close Window" alt="Close"></a></div>
     <h1> Edit Milestone </h1>

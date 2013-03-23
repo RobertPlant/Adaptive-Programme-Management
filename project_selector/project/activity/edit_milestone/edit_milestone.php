@@ -20,8 +20,8 @@ else
                     WHERE activity_ID='".$_REQUEST['Activity_ID']."';");
     echo $sql;
     mysql_close($con);
-    //ob_end_clean();
-    //header("Location: ../index.php?Acti=" . $_REQUEST['Activity_ID']);
+    ob_end_clean();
+    header("Location: ../index.php?Acti=" . $_REQUEST['Activity_ID']);
     exit;
 }
 
