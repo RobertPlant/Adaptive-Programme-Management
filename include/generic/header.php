@@ -4,13 +4,12 @@
 <meta name="author" content="Robert Plant">
 <script src="http://176.31.108.26/rob/js/jquery-1.8.2.min.js" type="text/javascript"></script>
 <script src="http://176.31.108.26/rob/js/jquery.nivo.slider.pack.js" type="text/javascript"></script>
-<link rel="stylesheet" href="http://176.31.108.26/rob/styles/default.css"  type="text/css"/>
+<link rel="stylesheet" href="rob/styles/default.css"  type="text/css"/>
 <link rel="stylesheet" href="http://176.31.108.26/rob/styles/slider/nivo-slider.css" type="text/css" media="screen" />
 <link rel="stylesheet" href="http://176.31.108.26/rob/styles/slider/default.css" type="text/css" media="screen" />
 <link rel="stylesheet" href="http://176.31.108.26/rob/styles/login/login.css" type="text/css" media="screen" />
 <link rel="stylesheet" href="http://176.31.108.26/rob/styles/default.css"  type="text/css"/>
 <link rel="icon" href="include/favicon.ico">
-
 </head>
 <body>
     <div id="dots"> </div>

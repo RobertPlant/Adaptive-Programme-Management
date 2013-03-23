@@ -1,6 +1,3 @@
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <link rel="stylesheet" type="text/css" href="../../styles/default.css" />
-    <link rel="stylesheet" href="../../styles/login/login.css" type="text/css" media="screen" />
     <script type="text/javascript">
         $(document).ready(function() {
             $('a.login-window').click(function() {

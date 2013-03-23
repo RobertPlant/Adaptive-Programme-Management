@@ -1,10 +1,6 @@
 <!DOCTYPE html>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <link rel="stylesheet" href="styles/default.css"  type="text/css"/>
-    <link rel="stylesheet" href="styles/slider/nivo-slider.css" type="text/css" media="screen" />
-    <link rel="stylesheet" href="styles/slider/default.css" type="text/css" media="screen" />
-    <link rel="stylesheet" href="styles/login/login.css" type="text/css" media="screen" />
     <script type="text/javascript" src="js/jquery-1.8.2.min.js"></script>
     <script src="js/jquery.nivo.slider.pack.js" type="text/javascript"></script>
     <script type="text/javascript">

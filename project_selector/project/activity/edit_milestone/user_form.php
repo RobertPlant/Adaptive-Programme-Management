@@ -3,12 +3,21 @@ $mysqli = new mysqli("localhost", "eggsdb", "eggsdb", "ada_prog_man");
 $l = $mysqli->query("SELECT * FROM activity Where activity_ID=" . $_GET['Acti']);
 $l->data_seek(0);
 $k = $l->fetch_assoc();
+
+function decode_date($a)
+{
+    $y = substr($a, 9, 4);          //year
+    $m = substr($a, 15, 2) + 1;      //month
+    $d = substr($a, 17, 3);          //day
+    $f = $d . ', ' . $m . ', ' . $y;
+    return $f;
+}
 ?>
 <!--/todo Work on the date stuff-->
 <div id="editActiv-box" class="login-popup" style="display: none; margin-top: -116px; margin-left: -132px;">
     <div align="right"><a href="#" class="close"><img src="http://176.31.108.26/rob/images/close_pop.png" class="btn_close" title="Close Window" alt="Close"></a></div>
     <h1> Edit Milestone </h1>
-    <form method="post" class="signin" action="http://176.31.108.26/rob/project_selector/add_milestone/add_milestone.php">
+    <form method="post" class="signin" action="http://176.31.108.26/rob/project_selector/project/activity/edit_milestone/edit_milestone.php">
         <fieldset class="textbox">
             <table>
                 <tr>
@@ -27,10 +36,10 @@ $k = $l->fetch_assoc();
                     <td>
                         <label class="username">
                             <span>Date From: </span>
-                            <input size="25" type="date" name="low"  value="<?php echo $k['low'] ?>"></label>
+                            <input size="25" type="text" name="low"  value="<?php echo decode_date($k['low']); ?>"></label>
                         <label class="username">
                             <span>Date Till: </span>
-                            <input size="25" type="date" name="y"  value="<?php echo $k['y'] ?>"></label>
+                            <input size="25" type="text" name="y"  value="<?php echo decode_date($k['y']); ?>"></label>
                         <label class="username">
                             <span>Current Status: </span>
                             <input size="25" type="text" name="phase"  value="<?php echo $k['phase'] ?>"> </label>
