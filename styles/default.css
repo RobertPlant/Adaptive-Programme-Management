@@ -16,7 +16,7 @@ h1
     font-weight: 800;
 }
 
-#dot {
+#dots {
     position:fixed;
     left:0;
     top:0;
@@ -54,6 +54,7 @@ a:hover {
     color: black;
     border: 1px dotted;
     border-radius:7px;
+    padding: 10px 10px 10px 10px;
 }
 
 * {
@@ -80,7 +81,6 @@ ul a {
     display: block;
     line-height: 80px;
     text-decoration: none;
-    font-family: "sergio ui";
     font-size: 21px;
     color: Black;
 }
@@ -91,8 +91,8 @@ ul a:hover {
 
 #fullwidth {
     width: 900px;
-    height: 200px;
     text-align: right;
+    margin-bottom: 20px;
 }
 
 .headertext {
@@ -141,12 +141,45 @@ table {
     text-align: center;
     color: Red;
     font-weight: 800;
-    font-size: 25px;
-    padding-top: 20px;
-    margin-bottom: 20px;
+    font-size: 25px;   
     background: White;
-    width: 900px;
-    height: 50px;
+    width: 800px;
+    height: 40px;
+    border: 1px dotted;
+    padding: 10px 10px 10px 10px;
+    border-radius:7px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+#proj {
+    margin-left: 50px;
+    
+}
+#proj img {
+    margin-bottom: 5px;
+    margin-right: 5px;
+}
+
+img {
+    border: 0;
+}
+
+#proj-nav {
+    float: right;
+    text-align: center;
+    color: Black;
+    font-weight: 800;
+    font-size: 16px;   
+    background: White;
+    width: 80px;
+    height: 60px;
     border: 1px dotted;
     border-radius:7px;
+    padding: 10px 10px 10px 10px;
+    margin: 0 auto;
+    margin-right: 5px;
+    margin-top: 5px;
 }
+
+

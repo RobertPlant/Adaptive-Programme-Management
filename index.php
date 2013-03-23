@@ -5,7 +5,7 @@
     <link rel="stylesheet" href="styles/slider/nivo-slider.css" type="text/css" media="screen" />
     <link rel="stylesheet" href="styles/slider/default.css" type="text/css" media="screen" />
     <link rel="stylesheet" href="styles/login/login.css" type="text/css" media="screen" />
-    <script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="js/jquery-1.8.2.min.js"></script>
     <script src="js/jquery.nivo.slider.pack.js" type="text/javascript"></script>
     <script type="text/javascript">
         $(window).load(function() {
@@ -15,7 +15,6 @@
             });
         });
     </script>
- 
     <title>Adaptive Programme Management</title>  
 </head>
 <body>
@@ -25,10 +24,12 @@
     <div id="slidercontainer">
         <div class="slider-wrapper theme-default">
             <div id="slider" class="nivoSlider">
-                <img src="images/nemo.jpg" alt width="500"  />
-                <img src="images/up.jpg" alt=""/>
-                <img src="images/walle.jpg" alt="" title="This is an example of a caption" />
-                <img src="images/toystory.jpg" alt="" />
+                <img src="images/slider/1.png" />
+                <img src="images/slider/3.png" />
+                <img src="images/slider/4.png" />
+                <img src="images/slider/5.png" />
+                <img src="images/slider/6.png" />
+                <img src="images/slider/7.png" />
             </div>
         </div>
     </div>
@@ -37,15 +38,13 @@
             <td>
                 <div class="boxtitle">UPDATES</div>
                 <div id="updates">
-                    Hello
-
+                    Hello2
                 </div>
             </td>
             <td>
                 <div class="boxtitle">ABOUT US</div>
                 <div id="aboutus">
                     Hey!
-
                 </div>
             </td>
         </tr>
