@@ -6,6 +6,7 @@
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="jquery.nivo.slider.pack" level="application" />
     <orderEntry type="library" name="jquery-1.8.2" level="application" />
+    <orderEntry type="library" name="testing" level="application" />
   </component>
 </module>
 

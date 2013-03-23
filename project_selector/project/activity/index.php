@@ -33,7 +33,7 @@ include 'delete_milestone/user_form.php';
                     <img src="../../../images/back.png"/><br/>Back
                 </a>
             </div>
-            <div id="proj-nav">     <!-- TODO Implement This -->
+            <div id="proj-nav">
                 <a href="#deleteActiv-box" class="login-window">
                     <img src="../../../images/cross.png"/><br/>Delete<br/>Milestone
                 </a>

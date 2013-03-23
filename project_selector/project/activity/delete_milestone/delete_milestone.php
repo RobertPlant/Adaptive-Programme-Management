@@ -1,5 +1,4 @@
 <?php
-//todo implement this functionallity
 $con = mysql_connect("localhost","eggsdb","eggsdb");
 if (!$con)
 {
@@ -8,7 +7,7 @@ if (!$con)
 else
 {
     mysql_select_db("ada_prog_man", $con);
-    mysql_query($sql = "DELETE FROM activity
+    mysql_query("DELETE FROM activity
                     WHERE activity_ID='".$_REQUEST['activity_ID']."';");
     mysql_close($con);
     ob_end_clean();

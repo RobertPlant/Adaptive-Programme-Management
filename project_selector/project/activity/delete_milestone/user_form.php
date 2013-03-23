@@ -1,4 +1,3 @@
-<!--/todo implement this functionallity-->
 <div id="deleteActiv-box" class="login-popup" style="display: none; margin-top: -116px; margin-left: -132px;">
     <div align="right"><a href="#" class="close"><img src="http://176.31.108.26/rob/images/close_pop.png" class="btn_close" title="Close Window" alt="Close"></a></div>
     <h1> Delete Milestone </h1>
