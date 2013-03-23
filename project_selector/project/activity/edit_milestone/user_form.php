@@ -6,9 +6,10 @@ $k = $l->fetch_assoc();
 
 function decode_date($a)
 {
+    //echo $a;
     $y = substr($a, 9, 4);          //year
     $m = substr($a, 15, 2) + 1;      //month
-    $d = substr($a, 17, 3);          //day
+    $d = substr($a, 18, 2);          //day
     $f = $d . ', ' . $m . ', ' . $y;
     return $f;
 }
@@ -28,7 +29,7 @@ function decode_date($a)
                         </label>
                         <label class="username">
                             <span>Associated Project: </span>
-                            <input size="25"  type="text" name="Project_ID"  value="<?php echo $k['criticals'] ?>"></label>
+                            <input size="25"  type="text" name="criticals"  value="<?php echo $k['criticals'] ?>"></label>
                         <label class="username">
                             <span>Critical Factors: </span>
                             <input size="25" type="text" name="criticalActivity"  value="<?php echo $k['criticalActivity'] ?>"> </label>
@@ -36,17 +37,17 @@ function decode_date($a)
                     <td>
                         <label class="username">
                             <span>Date From: </span>
-                            <input size="25" type="text" name="low"  value="<?php echo decode_date($k['low']); ?>"></label>
+                            <input size="25" type="text" name="start"  value="<?php echo decode_date($k['low']); ?>"></label>
                         <label class="username">
                             <span>Date Till: </span>
-                            <input size="25" type="text" name="y"  value="<?php echo decode_date($k['y']); ?>"></label>
+                            <input size="25" type="text" name="end"  value="<?php echo decode_date($k['y']); ?>"></label>
                         <label class="username">
                             <span>Current Status: </span>
                             <input size="25" type="text" name="phase"  value="<?php echo $k['phase'] ?>"> </label>
                     </td>
                 </tr>
             </table>
-            <input type="hidden" name="Proj" value="<?php echo $_GET['Proj']; ?>">
+            <input type="hidden" name="Activity_ID" value="<?php echo $_GET['Acti']; ?>">
             <button class="submit button" type="submit">Add Milestone!</button>
         </fieldset>
     </form>
