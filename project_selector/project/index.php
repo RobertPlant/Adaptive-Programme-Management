@@ -20,6 +20,7 @@ $mysqli = new mysqli("localhost", "eggsdb", "eggsdb", "ada_prog_man");
 $res = $mysqli->query("SELECT * FROM project Where Project_ID=" . $_GET['Proj']);
 $res->data_seek(0);
 $row = $res->fetch_assoc();
+include '../delete_project/user_form.php';
 ?>
 <table>
     <tr>
