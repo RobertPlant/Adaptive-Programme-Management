@@ -7,7 +7,7 @@
     <script type='text/javascript' src="http://176.31.108.26/rob/js/testing.js"></script>
     <link rel="stylesheet" href="../../../styles/default.css" type="text/css" media="screen" />
     <link rel="stylesheet" href="../../../styles/login/login.css" type="text/css" media="screen" />
-    <title>Individual Project</title>
+    <title>Individual Milestone</title>
 </head>
 <body>
 

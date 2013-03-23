@@ -16,6 +16,11 @@ h1
     font-weight: 800;
 }
 
+h2
+{
+    padding-top: 20px;
+}
+
 #dots {
     position:fixed;
     left:0;

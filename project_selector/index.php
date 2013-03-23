@@ -1,9 +1,11 @@
 <!DOCTYPE html>
+
 <html>     
     <?php
     include '../include/generic/header.php';
     include 'add_project/user_form.php';
     ?>
+    <title>Project Selection</title>
     <table>
         <tr>
             <td>
