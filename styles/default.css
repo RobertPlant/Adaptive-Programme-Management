@@ -94,18 +94,18 @@ ul a:hover {
     color: Grey;
 }
 
-#fullwidth {
+#fullWidth {
     width: 900px;
     text-align: right;
     margin-bottom: 20px;
 }
 
-.headertext {
+.headerText {
     text-align: right;
     width: 250px;
 }
 
-.headernav {
+.headerNav {
    width: 700px; 
    float: right;
 }
@@ -133,7 +133,7 @@ table {
     padding: 2px;
 }
 
-.boxtitle {
+.boxTitle {
     text-align: left;
     color: Black;
     font-weight: 800;

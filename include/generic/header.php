@@ -14,19 +14,19 @@
 </head>
 <body>
     <div id="dots"> </div>
-    <div id="fullwidth" >
+    <div id="fullWidth">
         <table>
             <tr>
                 <td>
-                    <div class="headertext">
-                        <h1><a href="http://176.31.108.26/rob/" title="Back to Home.">Adaptive<br />Programme<br/>Management</a></h1>
+                    <div class="headerText">
+                        <h1><a href="http://176.31.108.26/rob/" title="Back to Home.">Adaptive<br/>Programme<br/>Management</a></h1>
                     </div>
                 </td>
                 <td>
-                    <div class="headernav">
+                    <div class="headerNav">
                         <ul>
-                            <li><a href="#login-box" class="login-window">LOGIN</a></li> 
-                            <li><a href="#newuser-box" class="newuser-window">NEW USER</a></li>      
+                            <li><a href="#login-box" class="login-window">LOGIN</a></li>
+                            <li><a href="#newUser-box" class="login-window">NEW USER</a></li>
                             <li><a href="http://176.31.108.26/rob/project_selector/index.php">PROGRAMME</a></li>
                         </ul>
                     </div>

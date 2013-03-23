@@ -15,42 +15,42 @@
             });
         });
     </script>
-    <title>Adaptive Programme Management</title>  
+    <title>Adaptive Programme Management</title>
 </head>
 <body>
-    <?php
-        include 'include/generic/header.php';
-    ?>
-    <div id="slidercontainer">
-        <div class="slider-wrapper theme-default">
-            <div id="slider" class="nivoSlider">
-                <img src="images/slider/1.png" />
-                <img src="images/slider/3.png" />
-                <img src="images/slider/4.png" />
-                <img src="images/slider/5.png" />
-                <img src="images/slider/6.png" />
-                <img src="images/slider/7.png" />
-            </div>
+<?php
+include 'include/generic/header.php';
+?>
+<div id="sliderContainer">
+    <div class="slider-wrapper theme-default">
+        <div id="slider" class="nivoSlider">
+            <img src="images/slider/1.png" />
+            <img src="images/slider/3.png" />
+            <img src="images/slider/4.png" />
+            <img src="images/slider/5.png" />
+            <img src="images/slider/6.png" />
+            <img src="images/slider/7.png" />
         </div>
     </div>
-    <table>
-        <tr>
-            <td>
-                <div class="boxtitle">UPDATES</div>
-                <div id="updates">
-                    <b>Changes that have been made to the system consist of;</b>
-                    <p>Ability to add adtiional milestones has been added</p>
-                    <p>Ability to change current milestones has been added</p>
-                </div>
-            </td>
-            <td>
-                <div class="boxtitle">ABOUT US</div>
-                <div id="aboutus">
-                    <p>Adaptive Programme Management has been designed to be a suitable replacement for
+</div>
+<table>
+    <tr>
+        <td>
+            <div class="boxTitle">UPDATES</div>
+            <div id="updates">
+                <b>Changes that have been made to the system consist of;</b>
+                <p>Ability to add adtiional milestones has been added</p>
+                <p>Ability to change current milestones has been added</p>
+            </div>
+        </td>
+        <td>
+            <div class="boxTitle">ABOUT US</div>
+            <div id="aboutus">
+                <p>Adaptive Programme Management has been designed to be a suitable replacement for
                     users when dealing with projects, this system enables the user to create a project and to
                     manage it to completion</p>
-                </div>
-            </td>
-        </tr>
-    </table>
+            </div>
+        </td>
+    </tr>
+</table>
 </body>

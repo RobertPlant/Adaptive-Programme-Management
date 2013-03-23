@@ -19,7 +19,7 @@
 }
 
 /* You can customize to your needs  */
-.login-popup, .addproj-popup, .newuser-popup{
+.login-popup, .addProj-popup, .newUser-popup{
 	display:none;
 	background: #333;
 	padding: 10px; 	

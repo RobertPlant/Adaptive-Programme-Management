@@ -7,7 +7,7 @@
     <table>
         <tr>
             <td>
-                <div class="boxtitle">Project Selection</div>
+                <div class="boxTitle">Project Selection</div>
                 <div id="container">
                     <div id="proj-nav">     
                         <a href="../index.php">
@@ -15,7 +15,7 @@
                         </a>
                     </div> 
                     <div id="proj-nav">
-                        <a href="#addproj-box" class="addproj-window">
+                        <a href="#addProj-box" class="login-window">
                             <img src="../images/add-milestone.png"/><br/>Add<br/>Project
                         </a>
                     </div> 
