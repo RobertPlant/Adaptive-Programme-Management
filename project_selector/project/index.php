@@ -7,7 +7,7 @@
     <?php echo "<script type='text/javascript' src='data.php?Proj=" . $_GET['Proj'] . "'></script>" ?>
     <link rel="stylesheet" href="http://176.31.108.26/rob/styles/default.css" type="text/css" media="screen" />
     <script src="http://176.31.108.26/rob/js/exporting.js" type="text/javascript"></script>
-    <title>Individual Project</title>
+    <title>Individual Milestone</title>
 </head>
 <body>
 <?php
