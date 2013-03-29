@@ -21,6 +21,10 @@ h2
     padding-top: 20px;
 }
 
+h2 a {
+    color: #FF9900;
+}
+
 #dots {
     position:fixed;
     left:0;
