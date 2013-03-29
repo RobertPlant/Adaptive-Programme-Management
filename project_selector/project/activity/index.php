@@ -13,7 +13,7 @@
 
 <?php
 $mysqli = new mysqli("localhost", "eggsdb", "eggsdb", "ada_prog_man");
-$res = $mysqli->query("SELECT * FROM activity  WHERE activity_ID=" . $_GET['Acti']);
+$res = $mysqli->query("SELECT * FROM activity JOIN project ON project.Project_ID=activity.Project_ID JOIN userAccess ON project.Project_ID=userAccess.projectID WHERE activity_ID=" . $_GET['Acti']);
 $res->data_seek(0);
 $row = $res->fetch_assoc();
 include '../../../include/generic/header.php';

@@ -2,7 +2,7 @@
 Header("content-type: application/x-javascript");
 
       $mysqli = new mysqli("localhost", "eggsdb", "eggsdb", "ada_prog_man");
-         $res = $mysqli->query("SELECT * FROM activity WHERE Project_ID='".
+         $res = $mysqli->query("SELECT * FROM activity JOIN project ON project.Project_ID=activity.Project_ID JOIN userAccess ON project.Project_ID=userAccess.projectID WHERE activity.Project_ID='".
                  $_GET['Proj']."' ORDER BY low ASC");
          $res->data_seek(0);
          echo '$(function(){' . "\n";
@@ -42,7 +42,7 @@ var chart = new Highcharts.Chart({
     },       
         <?php
                               
-            $desc = $mysqli->query("SELECT * FROM project Where Project_ID=" . $_GET['Proj']);                        
+            $desc = $mysqli->query("SELECT * FROM project JOIN userAccess ON project.Project_ID=userAccess.projectId Where Project_ID=" . $_GET['Proj']);
             $desc->data_seek(0);
             $p = $desc->fetch_assoc();       
         ?> 
@@ -55,7 +55,7 @@ var chart = new Highcharts.Chart({
         },
         gridLineWidth: 1,
         categories: [     <?php
-                        $res = $mysqli->query("SELECT activity FROM activity ORDER BY low ASC");
+                        $res = $mysqli->query("SELECT activity FROM activity JOIN project ON project.Project_ID=activity.Project_ID JOIN userAccess ON project.Project_ID=userAccess.projectID ORDER BY low ASC");
 
                         $res->data_seek(0);
                         while ($row = $res->fetch_assoc()) {

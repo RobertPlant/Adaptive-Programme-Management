@@ -20,12 +20,12 @@
                         <a href="#addProj-box" class="login-window">
                             <img src="../images/add-milestone.png"/><br/>Add<br/>Project
                         </a>
-                    </div> 
+                    </div>
                     <?php
                     try {
                         IF ($_SESSION['Login'] == "Yes") {
                             $mysqli = new mysqli("localhost", "eggsdb", "eggsdb", "ada_prog_man");
-                            $prog = $mysqli->query("SELECT * FROM project");
+                            $prog = $mysqli->query("SELECT * FROM project JOIN userAccess ON project.Project_ID=userAccess.projectId");
                             $prog->data_seek(0);
                             while ($j = $prog->fetch_assoc()) {
                                 echo "<h2><a href='project/index.php?Proj=" . $j['Project_ID'] . "'>" . $j['Title'] . "</h2></a><br>";

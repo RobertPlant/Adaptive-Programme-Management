@@ -25,6 +25,7 @@
         {
             session_start(); 
             $_SESSION['Login']="Yes";
+            $_SESSION['UID']=$row['ID'];
             ob_end_clean(); 
             header("Location: http://176.31.108.26/rob/index.php?l=y"); 
             exit; 
