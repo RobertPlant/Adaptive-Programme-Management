@@ -14,7 +14,7 @@
         exit;
     }
         mysql_select_db("ada_prog_man", $con);
-    $sql = "SELECT * FROM users WHERE User_ID='" . $_POST["User_ID"] . "';";    
+    $sql = "SELECT * FROM users WHERE User_ID='" . $_REQUEST["User_ID"] . "';";
     $result = mysql_query($sql);
     $row = mysql_fetch_array($result);
     CRYPT_BLOWFISH;

@@ -1,9 +1,10 @@
 <?php
+session_start();
 Header("content-type: application/x-javascript");
 
       $mysqli = new mysqli("localhost", "eggsdb", "eggsdb", "ada_prog_man");
-         $res = $mysqli->query("SELECT * FROM activity JOIN project ON project.Project_ID=activity.Project_ID JOIN userAccess ON project.Project_ID=userAccess.projectID WHERE activity.Project_ID='".
-                 $_GET['Proj']."' ORDER BY low ASC");
+        $res = $mysqli->query("SELECT DISTINCT activity.* FROM activity JOIN project ON project.Project_ID=activity.Project_ID JOIN userAccess ON project.Project_ID=userAccess.projectID WHERE activity.Project_ID=".
+            $_GET['Proj']. " AND userAccess.userId=" . $_SESSION['UID'] . " ORDER BY low ASC");
          $res->data_seek(0);
          echo '$(function(){' . "\n";
          echo 'var _series = [{' . "\n";
@@ -41,8 +42,7 @@ var chart = new Highcharts.Chart({
         zoomType: 'x'
     },       
         <?php
-                              
-            $desc = $mysqli->query("SELECT * FROM project JOIN userAccess ON project.Project_ID=userAccess.projectId Where Project_ID=" . $_GET['Proj']);
+            $desc = $mysqli->query("SELECT DISTINCT project.* FROM project JOIN userAccess ON project.Project_ID=userAccess.projectId Where Project_ID=" . $_GET['Proj'] . " AND userAccess.userId=" . $_SESSION['UID']);
             $desc->data_seek(0);
             $p = $desc->fetch_assoc();       
         ?> 
@@ -55,7 +55,7 @@ var chart = new Highcharts.Chart({
         },
         gridLineWidth: 1,
         categories: [     <?php
-                        $res = $mysqli->query("SELECT activity FROM activity JOIN project ON project.Project_ID=activity.Project_ID JOIN userAccess ON project.Project_ID=userAccess.projectID ORDER BY low ASC");
+                        $res = $mysqli->query("SELECT DISTINCT activity FROM activity JOIN project ON project.Project_ID=activity.Project_ID JOIN userAccess ON project.Project_ID=userAccess.projectID WHERE userAccess.userId=" . $_SESSION['UID'] . " ORDER BY low ASC");
 
                         $res->data_seek(0);
                         while ($row = $res->fetch_assoc()) {

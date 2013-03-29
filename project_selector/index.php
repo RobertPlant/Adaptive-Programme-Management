@@ -25,7 +25,7 @@
                     try {
                         IF ($_SESSION['Login'] == "Yes") {
                             $mysqli = new mysqli("localhost", "eggsdb", "eggsdb", "ada_prog_man");
-                            $prog = $mysqli->query("SELECT * FROM project JOIN userAccess ON project.Project_ID=userAccess.projectId");
+                            $prog = $mysqli->query("SELECT DISTINCT project.Project_ID, project.Title FROM project RIGHT JOIN userAccess ON project.Project_ID=userAccess.projectId WHERE userAccess.userId=" . $_SESSION['UID'] . ";");
                             $prog->data_seek(0);
                             while ($j = $prog->fetch_assoc()) {
                                 echo "<h2><a href='project/index.php?Proj=" . $j['Project_ID'] . "'>" . $j['Title'] . "</h2></a><br>";

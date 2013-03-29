@@ -80,6 +80,14 @@ IF (array_key_exists('p', $_REQUEST))
     }
 }
 
+IF (array_key_exists('priv', $_REQUEST))
+{
+    IF ($_REQUEST['priv'] == "all")
+    {
+        $val = "This user already has permissions!";
+    }
+}
+
 IF ($val != NULL)
 {
     echo '<div id="error">' . $val . "</div>";

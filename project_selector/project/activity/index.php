@@ -2,18 +2,13 @@
 <?php  session_start(); ?>
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
 <head>
-    <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
-    <script type='text/javascript' src='http://176.31.108.26/rob/js/jquery-1.8.2.min.js'></script>
-    <script type='text/javascript' src="http://176.31.108.26/rob/js/testing.js"></script>
-    <link rel="stylesheet" href="../../../styles/default.css" type="text/css" media="screen" />
-    <link rel="stylesheet" href="../../../styles/login/login.css" type="text/css" media="screen" />
     <title>Individual Milestone</title>
 </head>
 <body>
 
 <?php
 $mysqli = new mysqli("localhost", "eggsdb", "eggsdb", "ada_prog_man");
-$res = $mysqli->query("SELECT * FROM activity JOIN project ON project.Project_ID=activity.Project_ID JOIN userAccess ON project.Project_ID=userAccess.projectID WHERE activity_ID=" . $_GET['Acti']);
+$res = $mysqli->query("SELECT * FROM activity JOIN project ON project.Project_ID=activity.Project_ID JOIN userAccess ON project.Project_ID=userAccess.projectID WHERE activity_ID=" . $_GET['Acti'] . " AND userAccess.userId=" . $_SESSION['UID']);
 $res->data_seek(0);
 $row = $res->fetch_assoc();
 include '../../../include/generic/header.php';
