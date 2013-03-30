@@ -2,17 +2,15 @@
 $mysqli = new mysqli("localhost", "eggsdb", "eggsdb", "ada_prog_man");
 if (!$mysqli)
 {
-    die('Could not connect: ' . mysql_error());
+    die('Could not connect to the database');
 }
 else
 {
-
     $res = $mysqli->query("SELECT * FROM users WHERE User_ID='" . $_REQUEST['name'] . "';");
-    $res->data_seek(0);
     $row = $res->fetch_assoc();
     $UID = $row['ID'];
+
     $res = $mysqli->query("SELECT * FROM userAccess WHERE projectId=" .  $_REQUEST['Proj'] . " AND  userId=" .  $UID . ";");
-    $res->data_seek(0);
     $row = $res->fetch_assoc();
     If ($row['projectId'] == null) {
         $mysqli->query("INSERT INTO userAccess (userId, projectId) VALUES (" . $UID . ", " . $_REQUEST['Proj'] . ");");

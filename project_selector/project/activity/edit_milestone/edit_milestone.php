@@ -1,15 +1,14 @@
 <?php
-$con = mysql_connect("localhost","eggsdb","eggsdb");
-if (!$con)
+$mysqli = new mysqli("localhost", "eggsdb", "eggsdb", "ada_prog_man");
+if (!$mysqli)
 {
-    die('Could not connect: ' . mysql_error());
+    die('Could not connect to the database');
 }
 else
 {
     $start = date_decode($_REQUEST['start']);
     $end = date_decode_end($_REQUEST['end']);
-    mysql_select_db("ada_prog_man", $con);
-    mysql_query("UPDATE activity
+    $mysqli->query("UPDATE activity
                     SET
                         activity='".$_REQUEST['activity'].
                         "', criticals='".$_REQUEST['criticals'].
@@ -18,8 +17,6 @@ else
                         low='".$start."', y='".$end."',
                         phase='".$_REQUEST['phase']."'
                     WHERE activity_ID='".$_REQUEST['Activity_ID']."';");
-    mysql_close($con);
-    ob_end_clean();
     header("Location: ../index.php?Acti=" . $_REQUEST['Activity_ID']);
     exit;
 }

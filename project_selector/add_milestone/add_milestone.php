@@ -1,23 +1,21 @@
 <?php
-$con = mysql_connect("localhost","eggsdb","eggsdb");
-if (!$con)
+$mysqli = new mysqli("localhost", "eggsdb", "eggsdb", "ada_prog_man");
+if (!$mysqli)
 {
-    die('Could not connect: ' . mysql_error());
+    die('Could not connect to the database');
 }
 else
 {
     $start = date_convert($_REQUEST['low']);
     $end = date_convert_end($_REQUEST['y']);
-    mysql_select_db("ada_prog_man", $con);
-    mysql_query("INSERT INTO activity
+
+    $mysqli->query("INSERT INTO activity
                         (Project_ID, low, y, activity, criticalActivity, criticals, phase, vendor, color)
                     VALUES
                         (" . $_REQUEST['Proj']  . ", '" . $start  . "', '" . $end  . "', '". $_REQUEST['activity']  . "', '".
             $_REQUEST['criticalActivity']  . "', '". $_REQUEST['criticals']  . "', '". $_REQUEST['phase']  . "', '".
             $_REQUEST['vendor']  . "', '". $_REQUEST['color']  . "')"
     );
-    mysql_close($con);
-    ob_end_clean();
     header("Location: ../project/index.php?Proj=" . $_REQUEST['Proj']);
     exit;
 }
