@@ -6,9 +6,9 @@ if (!$mysqli)
 }
 else
 {
-    $mysqli->query("DELETE FROM project
-                    WHERE Project_ID='".$_REQUEST['Project_ID']."';");
-    $mysqli->query("DELETE FROM userAccess WHERE projectId ='" . $_REQUEST['Project_ID'] . "';");
+    $mysqli->query("DELETE FROM project WHERE Project_ID='".$_REQUEST['Project_ID']."';");
+    $mysqli->query("DELETE FROM userAccess WHERE projectId='" . $_REQUEST['Project_ID'] . "';");
+    $mysqli->query("DELETE FROM activity WHERE Project_ID='" . $_REQUEST['Project_ID'] . "';");
     header("Location: ../index.php");
     exit;
 }

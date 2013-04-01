@@ -6,11 +6,11 @@
 
             <label class="username">
                 <span>Title: </span>
-                <input size="25" type="text" name="Title" value="<?php echo $k['Title'] ?>">
+                <input size="25" type="text" placeholder="Project Title" name="Title" value="<?php echo $k['Title'] ?>">
             </label>
             <label class="username">
                 <span>Description: </span>
-                <input size="25" type="text" name="Description" value="<?php echo $k['Description'] ?>">
+                <input size="25" type="text" placeholder="Project Description" name="Description" value="<?php echo $k['Description'] ?>">
             </label>
             <button class="submit button" type="submit">Add Project!</button>
         </fieldset>
