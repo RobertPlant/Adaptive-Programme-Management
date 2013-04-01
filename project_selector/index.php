@@ -11,14 +11,14 @@
             <td>
                 <div class="boxTitle">Project Selection</div>
                 <div id="container">
-                    <div id="proj-nav">     
-                        <a href="../index.php">
-                            <img src="../images/back.png"/><br/>Back
-                        </a>
-                    </div> 
                     <div id="proj-nav">
                         <a href="#addProj-box" class="login-window">
                             <img src="../images/add-milestone.png"/><br/>Add<br/>Project
+                        </a>
+                    </div>
+                    <div id="proj-nav">
+                        <a href="../index.php">
+                            <img src="../images/back.png"/><br/>Back
                         </a>
                     </div>
                     <?php

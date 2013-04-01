@@ -51,8 +51,6 @@ include '../delete_project/user_form.php';
                     <img src="../../images/back.png"/><br/>Back
                 </a>
             </div>
-
-
             <div id="container" style="height:450px">
                 <?php
                 echo "<div class='boxTitle'>" . $row['Title'] . "</div>";

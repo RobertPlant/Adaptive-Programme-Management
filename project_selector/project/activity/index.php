@@ -24,13 +24,13 @@ include 'delete_milestone/user_form.php';
                 </a>
             </div>
             <div id="proj-nav">
-                <a href="../index.php?Proj=<?php echo $row['Project_ID']; ?>">
-                    <img src="../../../images/back.png"/><br/>Back
+                <a href="#deleteActiv-box" class="login-window">
+                    <img src="../../../images/cross.png"/><br/>Delete<br/>Milestone
                 </a>
             </div>
             <div id="proj-nav">
-                <a href="#deleteActiv-box" class="login-window">
-                    <img src="../../../images/cross.png"/><br/>Delete<br/>Milestone
+                <a href="../index.php?Proj=<?php echo $row['Project_ID']; ?>">
+                    <img src="../../../images/back.png"/><br/>Back
                 </a>
             </div>
             <div id="container" >
