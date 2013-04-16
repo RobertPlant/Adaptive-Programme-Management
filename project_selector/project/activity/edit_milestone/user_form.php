@@ -6,11 +6,10 @@ $k = $l->fetch_assoc();
 
 function decode_date($a)
 {
-    //echo $a;
     $y = substr($a, 9, 4);          //year
-    $m = substr($a, 15, 2) + 1;      //month
+    $m =  substr("0" . (substr($a, 15, 2) + 1), 0, 2);      //month
     $d = substr($a, 18, 2);          //day
-    $f = $d . ', ' . $m . ', ' . $y;
+    $f = $d . '/' . $m . '/' . $y;
     return $f;
 }
 ?>
@@ -36,10 +35,10 @@ function decode_date($a)
                     <td>
                         <label class="username">
                             <span>Date From: </span>
-                            <input size="25" type="text" name="start"  value="<?php echo decode_date($k['low']); ?>"></label>
+                            <input size="25" type="date" name="start"  value="<?php echo decode_date($k['low']); ?>"></label>
                         <label class="username">
                             <span>Date Till: </span>
-                            <input size="25" type="text" name="end"  value="<?php echo decode_date($k['y']); ?>"></label>
+                            <input size="25" type="date" name="end"  value="<?php echo decode_date($k['y']); ?>"></label>
                         <label class="username">
                             <span>Current Status: </span>
                             <input size="25" type="text" name="phase"  value="<?php echo $k['phase'] ?>"> </label>

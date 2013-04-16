@@ -12,7 +12,7 @@
                         </label>
                         <label class="username">
                             <span>Associated Project: </span>
-                            <input size="25"  type="text" name="Project_ID"></label>
+                            <input size="25"  type="text" name="criticals"></label>
                         <label class="username">
                             <span>Critical Factors: </span>
                             <input size="25" type="text" name="criticalActivity"> </label>
