@@ -37,7 +37,7 @@
                                     $date = substr($i['y'], 18, -9) . "/" . (substr($i['y'], 15) + 1) . "/" . substr($i['y'], 9, -16);
                                     echo "<div id='proj'><img src='../images/prog-dot.png'><b><a href='project/activity/index.php?Acti=" . $i['activity_ID'] . "'>" . $i['activity'] . "</a></b>, Deadline - " . $date . "</div>";
                                 }
-                            }   //Use a Join instead?
+                            }
                         } else {
                             throw new Exception;
                         }
